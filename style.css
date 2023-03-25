@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(216, 216, 216);
+
+}
+
+body {
+    background: var(--backgroundColor);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--textColor);
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    max-width: 40em;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+    margin-bottom: 1.38rem;
+    font-family: var(--headingFont);
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: capitalize;
+    letter-spacing: var(--letterSpacing);
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+  
+  h2 {
+    font-size: 2.441rem;
+  }
+  
+  h3 {
+    font-size: 1.953rem;
+  }
+  
+  h4 {
+    font-size: 1.563rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  small,
+  .text-small {
+    font-size: var(--smallText);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+.wrapper{
+
+    max-width: 1200px;
+    margin: 100px auto ;
+}
+
+.wrapper nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+nav .items .item{
+    padding: 6px 2px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    cursor: pointer;
+    transition: .3s ease ;
+}
+
+span{
+    margin: 0 20px;
+}
+
+nav .items .active,
+nav .items .item:hover{
+    color: #0031b8;
+    border-bottom: 2px solid #0031b8;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+
+}
+
+.gallery .image{
+    width: 300px;
+    display: flex;
+    padding: 4px;
+}
+
+.gallery .image span{
+    display: flex;
+    width: 100%;
+}
+
+.gallery .image img{
+    width: 300px;
+    height: 250px;
+    vertical-align: middle;
+    transition: all .3s ease;
+}
+.gallery .image.hide{
+    display: none;
+}
+.gallery .image.show{
+    display: block;
+}
+.gallery .image:hover img{
+    transform: scale(1.1);
+}
